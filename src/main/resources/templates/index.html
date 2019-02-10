@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:each="mapEntry: ${user}">
+    <input type="text" class="form-control" readonly name="fileChoose_text" th:value="${mapEntry.key}">
+    <input type="text" class="form-control" readonly name="fileChoose_text" th:value="${mapEntry.value}">
+</div>
+</body>
+</html>

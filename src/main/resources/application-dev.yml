@@ -1,0 +1,61 @@
+
+#端口
+
+server:
+
+  port: 7080
+
+
+
+#spring连接数据库配置
+
+spring:
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+
+    username: root
+
+    password: root
+
+    url: jdbc:mysql://localhost:3306/dt55?serverTimezone=GMT%2B8&characterEncoding=utf8
+
+  thymeleaf:
+
+    cache: false
+
+    prefix: classpath:/templates/
+
+    suffix: .html
+
+    encoding: UTF-8
+
+    mode: HTML5
+
+
+#mybatis配置环境
+
+mybatis:
+
+  mapper-locations: classpath:mapping/*Mapper.xml
+
+  type-aliases-package: com.apple.demo032302.entity
+
+
+
+#显示sql
+
+logging:
+
+  level:
+
+    com:
+
+      apple:
+
+        demo032302:
+
+          mapper : debug
+
+
+
